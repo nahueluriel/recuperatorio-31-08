@@ -4,7 +4,14 @@
  * Por ejemplo para la entrada 12345 debe imprimir 54321.
  *
  */
-
-int main() {
-
+#include <stdlib.h>
+#include <stdio.h>
+int main(int argc, char  *argv[]) {
+int a= atoi(argv[1]);
+while(a!=0){
+  printf("(%d)\n", a%10 );
+  a/=10;
+}
+printf("\n");
+return 0;
 }
